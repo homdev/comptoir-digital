@@ -7,25 +7,25 @@ import {
 import { CiUser } from "react-icons/ci";
 import AboutTechnologies from "./AboutTechnologies";
 import UserDetail from "./UserDetail";
-import ProjectExperience from "./ProjectExperience";
+import ProjectExperience from "./ProjectExperiences";
 
 const AboutMe = () => {
   return (
     <div
       data-scroll-index="1"
       id="about"
-      className="py-3.5  max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto"
+      className="py-3.5  max-w-container xl:max-2xl:max-w-90rem max-xl:mx-auto xl:ml-auto"
     >
-      <div className="px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl about-section lg:p-10 2xl:p-13">
+      <div className="px-5 py-8 md:p-8 backdrop-blur-sm dark:bg-nightBlack rounded-2xl about-section lg:p-10 2xl:p-13">
         <div className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
-          <CiUser className="text-theme" size={14} />
+          <CiUser className="text-green-500" size={14} />
           CMDA
         </div>
         <div className="mt-7 md:mt-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            DZ <span className="font-semibold text-theme">-Connect</span>
+            DZ <span className="font-semibold text-green-500">-Connect</span>
           </h2>
-          <p className="max-w-2xl mt-4 md:mt-6 subtitle">
+          <p className="max-w-full mt-4 md:mt-6 subtitle">
             Bienvenue sur {" "}
             <span className="text-black dark:text-white">
             Le Conseil Mondial de la Diaspora Algérienne (CMDA){/* {userDetailsSidebar?.userName} */}
@@ -38,7 +38,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="mt-6 section-content">
-          <div className="inline-flex flex-wrap items-center gap-2 mb-5 text-sm md:gap-4">
+          <div className="inline-flex flex-wrap justify-around items-center gap-2 mb-5 text-sm md:gap-4">
             {technologies?.map((tech) => (
               <AboutTechnologies key={tech?.id} {...tech} />
             ))}

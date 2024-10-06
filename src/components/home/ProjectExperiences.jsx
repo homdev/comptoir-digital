@@ -15,7 +15,7 @@ const ProjectExperience = ({ count, postFix, title }) => {
 
   return (
     <li className="">
-      <div className="mb-1 text-2xl font-semibold md:text-3xl number text-theme 2xl:text-4xl">
+      <div className="mb-1 text-2xl font-semibold md:text-3xl number text-green-500 2xl:text-4xl">
         {/* <span>{count}</span>
         {postFix && "+"} */}
         <CountUp start={1} end={count} duration={5} redraw={true} suffix="+">

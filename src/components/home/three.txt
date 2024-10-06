@@ -1,0 +1,23 @@
+my-digital-agency/
+├── public/
+│   ├── favicon.ico
+│   └── logo.png               # Le logo de l'agence
+├── src/
+│   ├── components/
+│   │   ├── Button.jsx          # Composant pour les boutons
+│   │   ├── CallToAction.jsx    # Composant pour le bouton d'action dans la section hero
+│   │   ├── HeroSection.jsx     # Composant pour la section principale de la landing page
+│   │   ├── HeroSubtitle.jsx    # Composant pour le sous-titre de la section hero
+│   │   ├── HeroTitle.jsx       # Composant pour le titre principal de la section hero
+│   │   ├── Logo.jsx            # Composant pour le logo
+│   │   ├── NavBar.jsx          # Composant pour la barre de navigation
+│   │   └── Header.jsx          # Composant pour l'en-tête incluant le logo, la navbar et le bouton
+│   ├── pages/
+│   │   ├── _app.js             # Fichier principal pour importer Tailwind
+│   │   └── index.js            # Page principale qui regroupe tous les composants de la landing page
+│   └── styles/
+│       └── globals.css         # Styles globaux avec Tailwind importé
+├── tailwind.config.js          # Fichier de configuration Tailwind
+├── postcss.config.js           # Fichier de configuration PostCSS
+├── package.json                # Dépendances et scripts du projet
+└── README.md                   # Documentation du projet

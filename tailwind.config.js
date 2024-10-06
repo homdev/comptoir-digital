@@ -17,6 +17,8 @@ module.exports = {
         sans: ["'Poppins', sans-serif"],
       },
       fontSize: {
+        xs: '0.75rem',
+        sm: '0.8rem',
         lead: "2.45rem", // 40px
         regular: "0.94rem", //15px
       },
@@ -64,6 +66,10 @@ module.exports = {
         sectionTitle: "37rem",
       },
       keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
         topToBottom: {
           "0%": {
             top: "-4rem",
@@ -112,6 +118,7 @@ module.exports = {
         lineheight: "lineheight 1s ease-in-out 0s forwards",
         lineround: "lineround 1.2s linear 2s infinite",
         preloadedzero: "preloadedzero 0.3s ease-in-out 0.5s forwards",
+        marquee: 'marquee 20s linear infinite',
       },
       boxShadow: {
         dots_glow: "0 0 0 .5rem rgba(255, 255, 255, 0.15)",

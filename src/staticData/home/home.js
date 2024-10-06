@@ -67,9 +67,9 @@ export const introduce = {
     heading2: "De la Diasporas Algérienne",
   },
   desc: (
-    <p>
+    <p className="text-white">
       Bienvenue sur Le Conseil Mondial de la Diaspora Algérienne   {" "}
-      <span className="font-medium text-black dark:text-white/90">
+      <span className="font-medium text-green-500 dark:text-white/90">
       (CMDA)
       </span>{" "}
       vise à fédérer la diaspora algérienne mondiale. Par notre plateforme unique, nous encourageons la participation, la proposition et la promotion de projets qui enrichissent l’Algérie.
@@ -79,17 +79,17 @@ export const introduce = {
     {
       id: 1,
       title: "Investisseur",
-      icon: <BiCheckDouble size={25} className="text-theme mr-1" />,
+      icon: <BiCheckDouble size={25} className="text-green-500 mr-1" />,
     },
     {
       id: 2,
       title: "Contributeur",
-      icon: <BiCheckDouble size={25} className="text-theme mr-1" />,
+      icon: <BiCheckDouble size={25} className="text-green-500 mr-1" />,
     },
     {
       id: 2,
       title: "Porteur de Projet",
-      icon: <BiCheckDouble size={25} className="text-theme mr-1" />,
+      icon: <BiCheckDouble size={25} className="text-green-500 mr-1" />,
     },
   ],
 };
@@ -259,37 +259,37 @@ export const membersData = [
   {
     id: 1,
     name: 'Karim Zéribi',
-    role: 'Visual Designer',
+    role: 'Ingénieur Logiciel',
     imageUrl: '/assets/img/logo.png', 
   },  
   {
     id: 2,
     name: 'Karim Zéribi',
-    role: 'Visual Designer',
+    role: 'Ingénieur Logiciel',
     imageUrl: '/assets/img/logo.png', 
   },  
   {
     id: 3,
     name: 'Karim Zéribi',
-    role: 'Visual Designer',
+    role: 'Ingénieur Logiciel',
     imageUrl: '/assets/img/logo.png', 
   },
   {
     id: 4,
     name: 'Karim Zéribi',
-    role: 'Visual Designer',
+    role: 'Ingénieur Logiciel',
     imageUrl: '/assets/img/logo.png', 
   },  
   {
     id: 5,
     name: 'Karim Zéribi',
-    role: 'Visual Designer',
+    role: 'Ingénieur Logiciel',
     imageUrl: '/assets/img/logo.png', 
   },  
   {
     id: 6,
     name: 'Karim Zéribi',
-    role: 'Visual Designer',
+    role: 'Ingénieur Logiciel',
     imageUrl: '/assets/img/logo.png', 
   },    
 ];
@@ -298,9 +298,9 @@ export const membersData = [
 export const projects = {
   projectsHeading: {
     icon: <FaBriefcase className="text-theme" />,
-    title: "NOS PROJETS",
+    title: "MEMBRES",
     heading: "Découvrez",
-    coloredHeading: "Les Projets",
+    coloredHeading: "Les Membres",
     description: "Explorez les projets et découvrez comment nous contribuons au développement de la diaspora algérienne à travers nos initiatives.",
   },
   projectsData: [
@@ -309,11 +309,12 @@ export const projects = {
       title: "Développement Technologique",
       desc: "Promotion de l'innovation technologique parmi la diaspora algérienne à travers le soutien de startups et projets technologiques.",
       icon: <SeoIcon />,
-      progress: 75,
+      progress: 65,
       link: "#",
       slug: "developpement-technologique",
       imgUrl: portfolioImage1,
       note: 3.9,
+      endDate: "12 Juin",
 
       image: {
         thumbnail:projectInner1Image?.src,
@@ -361,32 +362,286 @@ export const projects = {
     },
     {
       id: 2,
-      title: "Projet 2",
-      company: "Société DEF",
+      title: "Développement Technologique",
+      desc: "Promotion de l'innovation technologique parmi la diaspora algérienne à travers le soutien de startups et projets technologiques.",
+      icon: <SeoIcon />,
+      progress: 15,
+      link: "#",
+      slug: "developpement-technologique",
+      imgUrl: portfolioImage1,
+      note: 3.9,
+      endDate: "20 Juin",
+
+      image: {
+        thumbnail:projectInner1Image?.src,
+        image: portfolioImage1?.src,
+        thumbnailText1: "Hôtel Concorde",
+        thumbnailText2: "Paris",
+      },
+
+      type: "Congrès",
+      title: "Projet 1",
+      company: "Société ABC",
       description:
       "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi...",
-      desc: "projet-2",
-      icon: <FaGraduationCap />,
-      progress: 60,
-      link: "#",
-      imgUrl: portfolioImage1,
-      note: 4.9,
+      slug: "cmda",
+      projectHeading: {
+        icon: <GrTasks className="text-theme" />,
+        title: "Congrès Paris",
+      },
+      projectInfo: [
+        {
+          field: "Places",
+          value: "+400 Prs",
+        },
+        {
+          field: "Lieu:",
+          value: "Hôtel Concorde Paris",
+        },
+        {
+          field: "Date",
+          value: "08 Mars 2024",
+        },
+      ],
+      projectDescription: {
+        descriptionTitle: "Le Conseil mondial de la diaspora algérienne est né",
+        description:
+          "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi, le CMDA vise à fédérer les compétences algériennes éparpillées à travers le monde pour soutenir le développement de l'Algérie. Le lancement a été célébré par plus de 400 participants et s'est articulé autour de la valorisation des potentiels de l'Algérie et de l'importance de l'unité et de l'action collective .",
+        descriptionLists: [
+          "L'appel à l'unité : Soulignant l'importance de réunir les compétences algériennes disséminées pour un objectif commun.",
+          "La promotion du potentiel algérien : Présentation de projets et débat sur l'apport de la diaspora au développement national.",
+          "Le soutien aux initiatives économiques : Encouragement à l'investissement dans des projets en Algérie, tels que la clinique cardiologique de Tipaza et l'éco-complexe touristique de Djanet.",
+        ],
+        projectImage: [projectInner1Image?.src, projectInner2Image?.src],
+      },
+      
     },
     {
       id: 3,
-      title: "Projet 3",
-      company: "Société XYZ",
+      title: "Développement Technologique",
+      desc: "Promotion de l'innovation technologique parmi la diaspora algérienne à travers le soutien de startups et projets technologiques.",
+      icon: <SeoIcon />,
+      progress: 55,
+      link: "#",
+      slug: "developpement-technologique",
+      imgUrl: portfolioImage1,
+      note: 3.9,
+      endDate: "25 Juillet",
+
+      image: {
+        thumbnail:projectInner1Image?.src,
+        image: portfolioImage1?.src,
+        thumbnailText1: "Hôtel Concorde",
+        thumbnailText2: "Paris",
+      },
+
+      type: "Congrès",
+      title: "Projet 1",
+      company: "Société ABC",
       description:
       "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi...",
-      desc: "Projet-3",
-      icon: <FaBriefcase />,
-      progress: 90,
+      slug: "cmda",
+      projectHeading: {
+        icon: <GrTasks className="text-theme" />,
+        title: "Congrès Paris",
+      },
+      projectInfo: [
+        {
+          field: "Places",
+          value: "+400 Prs",
+        },
+        {
+          field: "Lieu:",
+          value: "Hôtel Concorde Paris",
+        },
+        {
+          field: "Date",
+          value: "08 Mars 2024",
+        },
+      ],
+      projectDescription: {
+        descriptionTitle: "Le Conseil mondial de la diaspora algérienne est né",
+        description:
+          "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi, le CMDA vise à fédérer les compétences algériennes éparpillées à travers le monde pour soutenir le développement de l'Algérie. Le lancement a été célébré par plus de 400 participants et s'est articulé autour de la valorisation des potentiels de l'Algérie et de l'importance de l'unité et de l'action collective .",
+        descriptionLists: [
+          "L'appel à l'unité : Soulignant l'importance de réunir les compétences algériennes disséminées pour un objectif commun.",
+          "La promotion du potentiel algérien : Présentation de projets et débat sur l'apport de la diaspora au développement national.",
+          "Le soutien aux initiatives économiques : Encouragement à l'investissement dans des projets en Algérie, tels que la clinique cardiologique de Tipaza et l'éco-complexe touristique de Djanet.",
+        ],
+        projectImage: [projectInner1Image?.src, projectInner2Image?.src],
+      },
+      
+    },
+    {
+      id: 4,
+      title: "Développement Technologique",
+      desc: "Promotion de l'innovation technologique parmi la diaspora algérienne à travers le soutien de startups et projets technologiques.",
+      icon: <SeoIcon />,
+      progress: 75,
       link: "#",
+      slug: "developpement-technologique",
       imgUrl: portfolioImage1,
-      note: 4.5,
+      note: 3.9,
+      endDate: "17 Aout",
+
+      image: {
+        thumbnail:projectInner1Image?.src,
+        image: portfolioImage1?.src,
+        thumbnailText1: "Hôtel Concorde",
+        thumbnailText2: "Paris",
+      },
+
+      type: "Congrès",
+      title: "Projet 1",
+      company: "Société ABC",
+      description:
+      "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi...",
+      slug: "cmda",
+      projectHeading: {
+        icon: <GrTasks className="text-theme" />,
+        title: "Congrès Paris",
+      },
+      projectInfo: [
+        {
+          field: "Places",
+          value: "+400 Prs",
+        },
+        {
+          field: "Lieu:",
+          value: "Hôtel Concorde Paris",
+        },
+        {
+          field: "Date",
+          value: "08 Mars 2024",
+        },
+      ],
+      projectDescription: {
+        descriptionTitle: "Le Conseil mondial de la diaspora algérienne est né",
+        description:
+          "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi, le CMDA vise à fédérer les compétences algériennes éparpillées à travers le monde pour soutenir le développement de l'Algérie. Le lancement a été célébré par plus de 400 participants et s'est articulé autour de la valorisation des potentiels de l'Algérie et de l'importance de l'unité et de l'action collective .",
+        descriptionLists: [
+          "L'appel à l'unité : Soulignant l'importance de réunir les compétences algériennes disséminées pour un objectif commun.",
+          "La promotion du potentiel algérien : Présentation de projets et débat sur l'apport de la diaspora au développement national.",
+          "Le soutien aux initiatives économiques : Encouragement à l'investissement dans des projets en Algérie, tels que la clinique cardiologique de Tipaza et l'éco-complexe touristique de Djanet.",
+        ],
+        projectImage: [projectInner1Image?.src, projectInner2Image?.src],
+      },
+      
+    },
+    {
+      id: 5,
+      title: "Développement Technologique",
+      desc: "Promotion de l'innovation technologique parmi la diaspora algérienne à travers le soutien de startups et projets technologiques.",
+      icon: <SeoIcon />,
+      progress: 25,
+      link: "#",
+      slug: "developpement-technologique",
+      imgUrl: portfolioImage1,
+      note: 3.9,
+      endDate: "14 Aout",
+
+      image: {
+        thumbnail:projectInner1Image?.src,
+        image: portfolioImage1?.src,
+        thumbnailText1: "Hôtel Concorde",
+        thumbnailText2: "Paris",
+      },
+
+      type: "Congrès",
+      title: "Projet 1",
+      company: "Société ABC",
+      description:
+      "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi...",
+      slug: "cmda",
+      projectHeading: {
+        icon: <GrTasks className="text-theme" />,
+        title: "Congrès Paris",
+      },
+      projectInfo: [
+        {
+          field: "Places",
+          value: "+400 Prs",
+        },
+        {
+          field: "Lieu:",
+          value: "Hôtel Concorde Paris",
+        },
+        {
+          field: "Date",
+          value: "08 Mars 2024",
+        },
+      ],
+      projectDescription: {
+        descriptionTitle: "Le Conseil mondial de la diaspora algérienne est né",
+        description:
+          "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi, le CMDA vise à fédérer les compétences algériennes éparpillées à travers le monde pour soutenir le développement de l'Algérie. Le lancement a été célébré par plus de 400 participants et s'est articulé autour de la valorisation des potentiels de l'Algérie et de l'importance de l'unité et de l'action collective .",
+        descriptionLists: [
+          "L'appel à l'unité : Soulignant l'importance de réunir les compétences algériennes disséminées pour un objectif commun.",
+          "La promotion du potentiel algérien : Présentation de projets et débat sur l'apport de la diaspora au développement national.",
+          "Le soutien aux initiatives économiques : Encouragement à l'investissement dans des projets en Algérie, tels que la clinique cardiologique de Tipaza et l'éco-complexe touristique de Djanet.",
+        ],
+        projectImage: [projectInner1Image?.src, projectInner2Image?.src],
+      },
+      
+    },
+    {
+      id: 6,
+      title: "Développement Technologique",
+      desc: "Promotion de l'innovation technologique parmi la diaspora algérienne à travers le soutien de startups et projets technologiques.",
+      icon: <SeoIcon />,
+      progress: 95,
+      link: "#",
+      slug: "developpement-technologique",
+      imgUrl: portfolioImage1,
+      note: 3.9,
+      endDate: "09 Février",
+
+      image: {
+        thumbnail:projectInner1Image?.src,
+        image: portfolioImage1?.src,
+        thumbnailText1: "Hôtel Concorde",
+        thumbnailText2: "Paris",
+      },
+
+      type: "Congrès",
+      title: "Projet 1",
+      company: "Société ABC",
+      description:
+      "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi...",
+      slug: "cmda",
+      projectHeading: {
+        icon: <GrTasks className="text-theme" />,
+        title: "Congrès Paris",
+      },
+      projectInfo: [
+        {
+          field: "Places",
+          value: "+400 Prs",
+        },
+        {
+          field: "Lieu:",
+          value: "Hôtel Concorde Paris",
+        },
+        {
+          field: "Date",
+          value: "08 Mars 2024",
+        },
+      ],
+      projectDescription: {
+        descriptionTitle: "Le Conseil mondial de la diaspora algérienne est né",
+        description:
+          "Le 8 mars 2024 a marqué la fondation du Conseil Mondial de la Diaspora Algérienne (CMDA) à Paris. Initié par Karim Zeribi, le CMDA vise à fédérer les compétences algériennes éparpillées à travers le monde pour soutenir le développement de l'Algérie. Le lancement a été célébré par plus de 400 participants et s'est articulé autour de la valorisation des potentiels de l'Algérie et de l'importance de l'unité et de l'action collective .",
+        descriptionLists: [
+          "L'appel à l'unité : Soulignant l'importance de réunir les compétences algériennes disséminées pour un objectif commun.",
+          "La promotion du potentiel algérien : Présentation de projets et débat sur l'apport de la diaspora au développement national.",
+          "Le soutien aux initiatives économiques : Encouragement à l'investissement dans des projets en Algérie, tels que la clinique cardiologique de Tipaza et l'éco-complexe touristique de Djanet.",
+        ],
+        projectImage: [projectInner1Image?.src, projectInner2Image?.src],
+      },
+      
     },
     
-    // Ajoutez d'autres projets ici
+    
   ],
 };
 

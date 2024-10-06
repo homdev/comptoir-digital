@@ -72,7 +72,7 @@ const SidebarProfile = () => {
           Prochain événement:
           </div>
           <div className="mt-4 mb-6 ">
-            <Timer targetDate="2024-04-27T23:59:59" />
+            <Timer targetDate="2024-05-27T23:59:59" />
           </div>
           {/*<div className="flex items-center justify-between my-4 space-x-4 skills_circle">
             {userDetailsSidebar?.skillsInfo?.map((item) => (

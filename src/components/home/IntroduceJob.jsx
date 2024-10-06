@@ -2,7 +2,7 @@ const IntroduceJob = ({ icon, title }) => {
   return (
     <li className="flex items-center text-regular">
       {icon}
-      {title}
+      <span className="text-white">{title}</span>
     </li>
   );
 };

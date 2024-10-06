@@ -3,14 +3,15 @@ import  Link from "next/link";
 import { projects } from "@/src/staticData/home/home"; 
 import SectionHeading from "../shared/SectionHeading";
 import StarRating from '../rating/StarRating';
-import ProjectHead from '../project/head';
+import ProjectHead from '../project/projectHead';
 
 const Projects = () => {
+  console.log(projects.projectsData)
   return (
     <div
       data-scroll-index="2"
       id="projects"
-      className="py-5 xl:py-3.5 max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto"
+      className="py-5 xl:py-3.5 max-w-container xl:max-2xl:max-w-90rem max-xl:mx-auto xl:ml-auto"
     >
       <div className="px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl projects-section lg:p-10 2xl:p-13">
         <SectionHeading {...projects?.projectsHeading} />
@@ -61,7 +62,8 @@ const Projects = () => {
                     </a>
                 </div>
                 <span className="flex mb-2 items-center px-2 py-1 mt-4 text-xs font-semibold text-yellow-500 bg-yellow-100 rounded-md w-36">
-                    DATE FIN : 18 JUN
+                    
+                    Deadline: {project.endDate}
                 </span>
                 <span className="text-sm font-semibold tracking-tight text-gray-900 dark:text-white">Financement</span>
                 <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700 mb-4">
